@@ -1,6 +1,6 @@
 const mojDivVJs = document.getElementById("mojDivVJs")
 
-fetch("https://boozeapi.com/api/v1/cocktails")
+fetch("https://moarari.github.io/moj_prvy_backend/")
     .then((odpoved_raw) => odpoved_raw.json())
     .then((odpoved) => {
         console.log(odpoved.data)
