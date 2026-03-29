@@ -1,6 +1,6 @@
 const mojDivVJs = document.getElementById("mojDivVJs")
 
-fetch("https://moarari.github.io/moj_prvy_backend/")
+fetch("students.json")
     .then((odpoved_raw) => odpoved_raw.json())
     .then((odpoved) => {
         console.log(odpoved.data)
