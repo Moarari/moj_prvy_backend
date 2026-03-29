@@ -1,34 +1,62 @@
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-students = [
-    {"id": 1, "name": "Adam Novak", "age": 17, "image": "https://static.encyclopedia.warthunder.com/images/ussr_t_34_85_zis_53.png"},
-    {"id": 2, "name": "Beata Kralova", "age": 18, "image": "https://static.encyclopedia.warthunder.com/images/germ_pzkpfw_iii_ausf_n.png"},
-    {"id": 3, "name": "Cyril Urban", "age": 16, "image": "https://static.encyclopedia.warthunder.com/images/us_m2a2.png"},
-    {"id": 4, "name": "Diana Mrazova", "age": 17, "image": "https://picsum.photos/200?4"},
-    {"id": 5, "name": "Erik Svec", "age": 18, "image": "https://static.encyclopedia.warthunder.com/images/fr_hotchkiss_h39.png"},
-    {"id": 6, "name": "Filip Hric", "age": 17, "image": "https://static.encyclopedia.warthunder.com/images/us_m22_locust.png"},
-    {"id": 7, "name": "Gabriela Tothova", "age": 16, "image": "https://static.encyclopedia.warthunder.com/images/sw_bt_42.png"},
-    {"id": 8, "name": "Hana Bielikova", "age": 17, "image": "https://static.encyclopedia.warthunder.com/images/it_m11_39.png"},
-    {"id": 9, "name": "Ivan Kollar", "age": 18, "image": "https://static.encyclopedia.warthunder.com/images/germ_pzkpfw_38t_ausf_a.png"},
-    {"id": 10, "name": "Jana Sramkova", "age": 17, "image": "https://static.encyclopedia.warthunder.com/images/it_39m_csaba.png"}
+[
+  {
+    "age": 17,
+    "id": 1,
+    "image": "https://static.encyclopedia.warthunder.com/images/ussr_t_34_85_zis_53.png",
+    "name": "Adam Novak"
+  },
+  {
+    "age": 18,
+    "id": 2,
+    "image": "https://static.encyclopedia.warthunder.com/images/germ_pzkpfw_iii_ausf_n.png",
+    "name": "Beata Kralova"
+  },
+  {
+    "age": 16,
+    "id": 3,
+    "image": "https://static.encyclopedia.warthunder.com/images/us_m2a2.png",
+    "name": "Cyril Urban"
+  },
+  {
+    "age": 17,
+    "id": 4,
+    "image": "https://picsum.photos/200?4",
+    "name": "Diana Mrazova"
+  },
+  {
+    "age": 18,
+    "id": 5,
+    "image": "https://static.encyclopedia.warthunder.com/images/fr_hotchkiss_h39.png",
+    "name": "Erik Svec"
+  },
+  {
+    "age": 17,
+    "id": 6,
+    "image": "https://static.encyclopedia.warthunder.com/images/us_m22_locust.png",
+    "name": "Filip Hric"
+  },
+  {
+    "age": 16,
+    "id": 7,
+    "image": "https://static.encyclopedia.warthunder.com/images/sw_bt_42.png",
+    "name": "Gabriela Tothova"
+  },
+  {
+    "age": 17,
+    "id": 8,
+    "image": "https://static.encyclopedia.warthunder.com/images/it_m11_39.png",
+    "name": "Hana Bielikova"
+  },
+  {
+    "age": 18,
+    "id": 9,
+    "image": "https://static.encyclopedia.warthunder.com/images/germ_pzkpfw_38t_ausf_a.png",
+    "name": "Ivan Kollar"
+  },
+  {
+    "age": 17,
+    "id": 10,
+    "image": "https://static.encyclopedia.warthunder.com/images/it_39m_csaba.png",
+    "name": "Jana Sramkova"
+  }
 ]
-
-@app.route("/")
-def home():
-    return "Vitaj v mojom prvom backende!"
-
-@app.route("/api")
-def get_all_students():
-    return jsonify(students)
-
-@app.route("/api/student/<int:student_id>")
-def get_student(student_id):
-    for s in students:
-        if s["id"] == student_id:
-            return jsonify(s)
-    return jsonify({"error": "Student not found"}), 404
-
-if __name__ == "__main__":
-    app.run(debug=True)
