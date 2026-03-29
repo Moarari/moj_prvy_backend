@@ -1,0 +1,62 @@
+[
+  {
+    "age": 17,
+    "id": 1,
+    "image": "https://picsum.photos/200?1",
+    "name": "Adam Novak"
+  },
+  {
+    "age": 18,
+    "id": 2,
+    "image": "https://picsum.photos/200?2",
+    "name": "Beata Kralova"
+  },
+  {
+    "age": 16,
+    "id": 3,
+    "image": "https://picsum.photos/200?3",
+    "name": "Cyril Urban"
+  },
+  {
+    "age": 17,
+    "id": 4,
+    "image": "https://picsum.photos/200?4",
+    "name": "Diana Mrazova"
+  },
+  {
+    "age": 18,
+    "id": 5,
+    "image": "https://picsum.photos/200?5",
+    "name": "Erik Svec"
+  },
+  {
+    "age": 17,
+    "id": 6,
+    "image": "https://picsum.photos/200?6",
+    "name": "Filip Hric"
+  },
+  {
+    "age": 16,
+    "id": 7,
+    "image": "https://picsum.photos/200?7",
+    "name": "Gabriela Tothova"
+  },
+  {
+    "age": 17,
+    "id": 8,
+    "image": "https://picsum.photos/200?8",
+    "name": "Hana Bielikova"
+  },
+  {
+    "age": 18,
+    "id": 9,
+    "image": "https://picsum.photos/200?9",
+    "name": "Ivan Kollar"
+  },
+  {
+    "age": 17,
+    "id": 10,
+    "image": "https://picsum.photos/200?10",
+    "name": "Jana Sramkova"
+  }
+]
