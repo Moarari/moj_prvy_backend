@@ -2,23 +2,32 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>BoozeAPI – Cocktaily</title>
+    <title>Študenti</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fafafa;
-            padding: 20px;
+        #mojDivVJs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
         }
-        #mojDivVJs img {
-            margin: 10px;
+        .card {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .card img {
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            width: 200px;
+        }
+        .card p {
+            margin-top: 8px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Studenti z môjho JSONu</h1>
+    <h1>Študenti</h1>
     <div id="mojDivVJs"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
