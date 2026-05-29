@@ -1,0 +1,1 @@
+<img width="867" height="1300" alt="172040641-portrait-of-a-wealthy-jewish-man-with-a-gold-ring-on-his-finger-and-a-bundle-of-banknotes-who" src="https://github.com/user-attachments/assets/0c0d834d-ed1b-4d55-863f-e2396aa2b276" />
